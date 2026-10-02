@@ -365,11 +365,11 @@ def update_greeting():
     hour = datetime.now().hour
 
     if hour < 12:
-        greeting = "Good morning, Ken."
+        greeting = "Good morning."
     elif hour < 18:
-        greeting = "Good afternoon, Ken."
+        greeting = "Good afternoon."
     else:
-        greeting = "Good evening, Ken."
+        greeting = "Good evening."
 
     title_label.config(text=greeting)
     window.after(60000, update_greeting)
